@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Warthog from './Warthog.js';
+import Giraffe from './Giraffe.js';
 import { HashRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import Store from './Store.js';
@@ -8,8 +8,8 @@ import Store from './Store.js';
 ReactDOM.render(
   <Provider store={Store}>
     <HashRouter>
-      <Warthog />
+      <Giraffe />
     </HashRouter>
   </Provider>,
-  document.getElementById('warthog')
+  document.getElementById('giraffe')
 );

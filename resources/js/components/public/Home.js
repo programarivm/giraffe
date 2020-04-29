@@ -16,7 +16,7 @@ function Home() {
         </Typography>
         <Typography variant="h6" color="secondary" paragraph={true}>
           This is a real-world example SPA, a React GUI interacting with a Laravel API with the following features: ACL (access control list),
-          JWT authentication, CRUD implementation, REST API, Redux, Data-driven tests.
+          JWT authentication, CRUD implementation, REST API, Redux, Next.js, Data-driven tests.
         </Typography>
         <Button
           variant="contained"
@@ -28,7 +28,7 @@ function Home() {
         </Button>
       </Grid>
       <Grid item xs={4}>
-        <img src={stickyNotes} alt="Warthog logo" style={{ marginTop: 15, maxWidth: 400 }}/>
+        <img src={stickyNotes} alt="Giraffe logo" style={{ marginTop: 15, maxWidth: 400 }}/>
       </Grid>
       <Grid item xs={1}></Grid>
       <Footer />

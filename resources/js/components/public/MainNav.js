@@ -40,7 +40,7 @@ class MainNav extends React.Component {
               to="/home"
               className={classes.menuOption}
             >
-              <img src={logo} alt="Warthog logo" />
+              <img src={logo} alt="Giraffe logo" />
             </NavLink>
             <NavLink
               tag={Link}
