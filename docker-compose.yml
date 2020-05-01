@@ -8,6 +8,8 @@ services:
       working_dir: /usr/share/nginx/giraffe
       networks:
           - giraffe
+      ports:
+          - "3000:3000"
       volumes:
           - ./:/usr/share/nginx/giraffe
           - ./docker/php/php.ini:/usr/local/etc/php/php.ini
@@ -19,6 +21,8 @@ services:
       working_dir: /usr/share/nginx/giraffe
       networks:
           - giraffe
+      links:
+        - php_fpm:nextjs
       ports:
           - "443:443"
       volumes:
