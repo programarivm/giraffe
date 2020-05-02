@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { nice } from './Validation';
+import { nice } from '@/actions/api/Validation';
 
 const messages = {
 	error: 'Whoops! Sorry there was an error, please try again later.'

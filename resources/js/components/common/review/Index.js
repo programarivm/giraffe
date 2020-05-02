@@ -1,11 +1,11 @@
-import ApiReviewActions from '../../../actions/api/ReviewActions';
-import Can from '../../Can';
+import ApiReviewActions from '@/actions/api/ReviewActions';
+import Can from '@/components/Can';
 import { connect } from 'react-redux';
 import DeleteIcon from '@material-ui/icons/Delete';
 import { IconButton } from '@material-ui/core';
-import Loading from '../../Loading';
+import Loading from '@/components/Loading';
 import React from 'react';
-import starIcon from '../../../../images/star-icon.png';
+import starIcon from '@/../images/star-icon.png';
 
 // MaterialTable
 import MaterialTable from "material-table";

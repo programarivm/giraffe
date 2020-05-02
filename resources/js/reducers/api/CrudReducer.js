@@ -1,4 +1,4 @@
-import ApiCrudActionTypes from '../../constants/api/CrudActionTypes';
+import ApiCrudActionTypes from '@/constants/api/CrudActionTypes';
 
 export default class CrudReducer {
   constructor(initialState) {

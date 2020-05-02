@@ -1,11 +1,11 @@
-import ApiRestaurantActions from '../../../actions/api/RestaurantActions';
+import ApiRestaurantActions from '@/actions/api/RestaurantActions';
 import { Backdrop, Button, ButtonGroup, Fade, Modal } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import { connect } from 'react-redux';
-import { FormInputs } from './FormInputs';
-import Loading from '../../Loading';
+import { FormInputs } from '@/components/private/restaurant/FormInputs';
+import Loading from '@/components/Loading';
 import React from 'react';
-import Validation from '../../Validation';
+import Validation from '@/components/Validation';
 
 const styles = theme => ({
   modal: {

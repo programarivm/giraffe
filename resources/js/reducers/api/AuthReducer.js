@@ -1,7 +1,7 @@
-import ability from '../../ability';
-import abilityRules from '../../../../storage/ability-rules.json';
-import ApiAuthActionTypes from '../../constants/api/AuthActionTypes';
-import Session from '../../Session';
+import ability from '@/ability';
+import abilityRules from '@/../../storage/ability-rules.json';
+import ApiAuthActionTypes from '@/constants/api/AuthActionTypes';
+import Session from '@/Session';
 
 const initialState = {
   response: [],

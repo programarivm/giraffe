@@ -1,5 +1,5 @@
-import CrudReducer from './CrudReducer';
-import UserState from '../../states/UserState';
+import CrudReducer from '@/reducers/api/CrudReducer';
+import UserState from '@/states/UserState';
 
 const initialState = Object.assign({}, UserState.initial(), {
   response: [],

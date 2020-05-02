@@ -1,5 +1,5 @@
-import ability from '../../ability';
-import ApiAuthActions from '../../actions/api/AuthActions';
+import ability from '@/ability';
+import ApiAuthActions from '@/actions/api/AuthActions';
 import { connect } from 'react-redux';
 import { Grid } from '@material-ui/core';
 import React from 'react';
