@@ -1,11 +1,8 @@
 import { AppBar, Button, ButtonGroup, Toolbar } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
-import { Home } from '@/components/public/Home';
-import { Link, NavLink, Route, Redirect } from 'react-router-dom';
+import Link from 'next/link';
 import React from 'react';
-import Reviews from '@/components/common/Reviews';
-import SignIn from '@/components/public/SignIn';
-import logo from '@/../images/logo.png';
+import logo from '../../../images/logo.png';
 
 const styles = theme => ({
   root: {
@@ -35,55 +32,28 @@ class MainNav extends React.Component {
       <div className={classes.root}>
         <AppBar position="static">
           <Toolbar>
-            <NavLink
-              tag={Link}
-              to="/home"
-              className={classes.menuOption}
-            >
+            <Link href="/">
               <img src={logo} alt="Giraffe logo" />
-            </NavLink>
-            <NavLink
-              tag={Link}
-              to="/home"
-              className={classes.menuOption}
-              activeClassName={classes.menuOptionActive}
-            >
-              Home
-            </NavLink>
-            <NavLink
-              tag={Link}
-              to="/reviews"
-              className={classes.menuOption}
-              activeClassName={classes.menuOptionActive}
-            >
-              Reviews
-            </NavLink>
+            </Link>
+            <Link href="/home">
+              <a className={classes.menuOption}>Home</a>
+            </Link>
+            <Link href="/">
+              <a className={classes.menuOption}>Reviews</a>
+            </Link>
             <ButtonGroup
               size="small"
               aria-label="small outlined button group"
               className={classes.buttonGroup}
             >
               <Button>
-                <NavLink tag={Link} to="/login">
-                  Sign in
-                </NavLink>
+                <Link href="/">
+                  <a style={{ textDecoration: 'none' }}>Sign in</a>
+                </Link>
               </Button>
             </ButtonGroup>
           </Toolbar>
         </AppBar>
-        <Route exact path="/" render={() => (<Redirect to="/home" />)} />
-        <Route
-          path="/home"
-          render={(props) => <Home {...props} />}
-        />
-        <Route
-          path="/reviews"
-          render={(props) => <Reviews {...props} />}
-        />
-        <Route
-          path="/login"
-          render={(props) => <SignIn {...props} />}
-        />
       </div>
     );
   }

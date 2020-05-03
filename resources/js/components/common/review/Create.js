@@ -1,12 +1,12 @@
-import ApiReviewActions from '@/actions/api/ReviewActions';
+import ApiReviewActions from 'actions/api/ReviewActions';
 import { Backdrop, Button, ButtonGroup, Fade, InputLabel, MenuItem, Modal, TextField } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import { connect } from 'react-redux';
-import Loading from '@/components/Loading';
+import Loading from 'components/Loading';
 import { Range } from 'react-range';
 import React from 'react';
-import ReviewState from '@/states/ReviewState';
-import Validation from '@/components/Validation';
+import ReviewState from 'states/ReviewState';
+import Validation from 'components/Validation';
 
 const styles = theme => ({
   modal: {

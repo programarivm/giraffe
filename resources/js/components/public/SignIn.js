@@ -1,9 +1,9 @@
-import ApiAuthActions from '@/actions/api/AuthActions';
+import ApiAuthActions from 'actions/api/AuthActions';
 import { Button, Divider, Grid, Paper, TextField, Typography } from '@material-ui/core';
 import { connect } from 'react-redux';
-import Loading from '@/components/Loading';
+import Loading from 'components/Loading';
 import React from 'react';
-import Validation from '@/components/Validation';
+import Validation from 'components/Validation';
 
 class SignIn extends React.Component {
   constructor(props) {

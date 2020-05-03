@@ -1,6 +1,6 @@
-import ApiAuthActionTypes from '@/constants/api/AuthActionTypes';
+import ApiAuthActionTypes from 'constants/api/AuthActionTypes';
 import axios from 'axios';
-import { nice } from '@/actions/api/Validation';
+import { nice } from 'actions/api/Validation';
 
 class AuthActions {
 	constructor() {
