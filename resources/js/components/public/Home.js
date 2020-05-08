@@ -1,12 +1,11 @@
 import Button from '@material-ui/core/Button';
 import { Grid } from '@material-ui/core'
 import { Footer } from 'components/public/Footer';
-import { Link } from 'react-router-dom';
 import React from 'react';
 import Typography from '@material-ui/core/Typography'
 import stickyNotes from '../../../images/sticky-notes.jpg';
 
-function Home() {
+export default function Home() {
   return (
     <Grid container style={{ marginTop: 40 }}>
       <Grid item xs={1}></Grid>
@@ -21,8 +20,6 @@ function Home() {
         <Button
           variant="contained"
           color="primary"
-          component={Link}
-          to={'/login'}
         >
           Find out now!
         </Button>
@@ -35,5 +32,3 @@ function Home() {
     </Grid>
   );
 }
-
-export { Home };
