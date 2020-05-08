@@ -10,7 +10,7 @@ class AuthActions {
 
 	login(credentials) {
 		return dispatch => {
-			return axios.post(process.env.MIX_APP_URL + this.endpoint + '/login',credentials)
+			return axios.post(this.endpoint + '/login',credentials)
 				.then((res) => {
 					switch (res.status) {
 						case 204:

@@ -47,7 +47,7 @@ class MainNav extends React.Component {
               className={classes.buttonGroup}
             >
               <Button>
-                <Link href="/">
+                <Link href="/login">
                   <a style={{ textDecoration: 'none' }}>Sign in</a>
                 </Link>
               </Button>

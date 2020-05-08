@@ -1,5 +1,5 @@
-import CrudReducer from '@/reducers/api/CrudReducer';
-import RestaurantState from '@/states/RestaurantState';
+import CrudReducer from 'reducers/api/CrudReducer';
+import RestaurantState from 'states/RestaurantState';
 
 const initialState = Object.assign({}, RestaurantState.initial(), {
   response: [],

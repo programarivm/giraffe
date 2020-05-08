@@ -1,11 +1,11 @@
-import ApiUserActions from '@/actions/api/UserActions';
+import ApiUserActions from 'actions/api/UserActions';
 import { Button, ButtonGroup, Paper, TextField } from '@material-ui/core';
 import { connect } from 'react-redux';
-import { FormInputs } from '@/components/private/user/FormInputs';
-import Loading from '@/components/Loading';
+import { FormInputs } from 'components/private/user/FormInputs';
+import Loading from 'components/Loading';
 import React from 'react';
-import UserState from '@/states/UserState';
-import Validation from '@/components/Validation';
+import UserState from 'states/UserState';
+import Validation from 'components/Validation';
 
 const initialState = Object.assign({}, UserState.initial(), { response: [] });
 
