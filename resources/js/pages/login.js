@@ -1,13 +1,30 @@
+import React from 'react';
+import { connect } from 'react-redux';
 import CssBaseline from "@material-ui/core/CssBaseline";
 import MainNav  from 'components/public/MainNav';
 import SignIn  from 'components/public/SignIn';
-import { Provider } from "react-redux";
-import Store from 'Store.js';
 
-export default () => (
-  <Provider store={Store}>
-    <CssBaseline />
-    <MainNav />
-    <SignIn />
-  </Provider>
-);
+class App extends React.Component {
+
+  static getInitialProps({store}) {}
+
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <div>
+        <CssBaseline />
+        <MainNav />
+        <SignIn />
+      </div>
+    );
+  }
+}
+
+const mapStateToProps = state => {
+  return state.ApiAuthReducer;
+};
+
+export default connect(mapStateToProps, null)(App);
