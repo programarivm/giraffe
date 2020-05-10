@@ -1,5 +1,5 @@
-import ReviewActionTypes from 'constants/ReviewActionTypes';
-import ReviewState from 'states/ReviewState';
+import ReviewActionTypes from '@/constants/ReviewActionTypes';
+import ReviewState from '@/states/ReviewState';
 
 const initialState = Object.assign({}, ReviewState.initial(), {
   response: [],

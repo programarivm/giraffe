@@ -1,11 +1,11 @@
-import ApiRestaurantActions from 'actions/api/RestaurantActions';
+import ApiRestaurantActions from '@/actions/api/RestaurantActions';
 import { Button, ButtonGroup, Paper } from '@material-ui/core';
 import { connect } from 'react-redux';
-import { FormInputs } from 'components/private/restaurant/FormInputs';
-import Loading from 'components/Loading';
+import { FormInputs } from '@/components/private/restaurant/FormInputs';
+import Loading from '@/components/Loading';
 import React from 'react';
-import RestaurantState from 'states/RestaurantState';
-import Validation from 'components/Validation';
+import RestaurantState from '@/states/RestaurantState';
+import Validation from '@/components/Validation';
 
 const initialState = Object.assign({}, RestaurantState.initial(), { response: [] });
 

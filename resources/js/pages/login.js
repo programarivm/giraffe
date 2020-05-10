@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import CssBaseline from "@material-ui/core/CssBaseline";
-import MainNav  from 'components/public/MainNav';
-import SignIn  from 'components/public/SignIn';
+import MainNav  from '@/components/public/MainNav';
+import SignIn  from '@/components/public/SignIn';
 
 const LoginPage = () => (
   <div>

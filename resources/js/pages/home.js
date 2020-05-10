@@ -2,8 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import CookieConsent from 'react-cookie-consent';
 import CssBaseline from "@material-ui/core/CssBaseline";
-import Home  from 'components/public/Home';
-import MainNav  from 'components/public/MainNav';
+import Home  from '@/components/public/Home';
+import MainNav  from '@/components/public/MainNav';
 
 class App extends React.Component {
 

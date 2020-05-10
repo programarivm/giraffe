@@ -4,7 +4,7 @@ const path = require('path');
 
 module.exports = withImages(withCSS({
   webpack(config) {
-    config.resolve.modules.push(path.resolve('./resources/js'))
+    config.resolve.alias['@'] = path.join(__dirname, './resources/js')
     return config
   }
 }))

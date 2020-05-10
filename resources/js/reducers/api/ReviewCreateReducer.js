@@ -1,5 +1,5 @@
-import CrudReducer from 'reducers/api/CrudReducer';
-import ReviewState from 'states/ReviewState';
+import CrudReducer from '@/reducers/api/CrudReducer';
+import ReviewState from '@/states/ReviewState';
 
 const initialState = Object.assign({}, ReviewState.initial(), {
   response: [],

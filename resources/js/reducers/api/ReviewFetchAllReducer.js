@@ -1,4 +1,4 @@
-import CrudReducer from 'reducers/api/CrudReducer';
+import CrudReducer from '@/reducers/api/CrudReducer';
 
 const initialState = {
   data: [],

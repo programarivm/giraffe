@@ -1,6 +1,6 @@
 import Button from '@material-ui/core/Button';
 import { Grid } from '@material-ui/core'
-import { Footer } from 'components/public/Footer';
+import { Footer } from '@/components/public/Footer';
 import React from 'react';
 import Typography from '@material-ui/core/Typography'
 import stickyNotes from '../../../images/sticky-notes.jpg';

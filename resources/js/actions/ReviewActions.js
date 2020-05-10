@@ -1,5 +1,5 @@
 import axios from 'axios';
-import ReviewActionTypes from 'constants/ReviewActionTypes';
+import ReviewActionTypes from '@/constants/ReviewActionTypes';
 
 const messages = {
 	error: 'Whoops! Sorry there was an error, please try again later.'
