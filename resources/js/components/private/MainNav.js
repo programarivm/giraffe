@@ -41,7 +41,7 @@ class MainNav extends React.Component {
             <img src={logo} alt="Giraffe logo" className={classes.menuOption} />
             <NavLink
               tag={NavLink}
-              to="/reviews"
+              to="/admin/reviews"
               className={classes.menuOption}
               activeClassName={classes.menuOptionActive}
             >
@@ -50,7 +50,7 @@ class MainNav extends React.Component {
             <Can I="index" a="User">
               <NavLink
                 tag={NavLink}
-                to="/users"
+                to="/admin/users"
                 className={classes.menuOption}
                 activeClassName={classes.menuOptionActive}
               >
@@ -60,7 +60,7 @@ class MainNav extends React.Component {
             <Can I="update" a="Restaurant">
               <NavLink
                 tag={NavLink}
-                to="/restaurants"
+                to="/admin/restaurants"
                 className={classes.menuOption}
                 activeClassName={classes.menuOptionActive}
               >
@@ -73,19 +73,19 @@ class MainNav extends React.Component {
           </Toolbar>
         </AppBar>
         <Route
-          path="/reviews"
+          path="/admin/reviews"
           render={(props) => <Reviews {...props} />}
         />
         <Route
-          path="/users"
+          path="/admin/users"
           render={(props) => <Users {...props} />}
         />
         <Route
-          path="/restaurants"
+          path="/admin/restaurants"
           render={(props) => <Restaurants {...props} />}
         />
         <Route
-          path="/logout"
+          path="/admin/logout"
           render={(props) => <SignOut {...props} />}
         />
       </div>

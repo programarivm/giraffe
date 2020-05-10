@@ -44,5 +44,8 @@ docker exec -it giraffe_php_fpm php artisan acl:setup
 # create a new JWT secret
 docker exec -it giraffe_php_fpm php artisan jwt:secret --force
 
-# compile the React app
+# compile the the app's private components
+docker exec -it giraffe_php_fpm npm run development
+
+# run Next.js to serve the app's public components
 docker exec -it giraffe_php_fpm npm run dev

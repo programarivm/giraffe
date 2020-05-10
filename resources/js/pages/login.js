@@ -4,6 +4,14 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import MainNav  from 'components/public/MainNav';
 import SignIn  from 'components/public/SignIn';
 
+const LoginPage = () => (
+  <div>
+    <CssBaseline />
+    <MainNav />
+    <SignIn />
+  </div>
+);
+
 class App extends React.Component {
 
   static getInitialProps({store}) {}
@@ -15,9 +23,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <CssBaseline />
-        <MainNav />
-        <SignIn />
+        { this.props.session.role ? window.location.href = '/admin/reviews' : <LoginPage /> }
       </div>
     );
   }

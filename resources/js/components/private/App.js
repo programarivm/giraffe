@@ -8,7 +8,7 @@ class App extends React.Component {
     super(props);
     switch (this.props.location.pathname) {
       case '/login':
-        this.props.history.push('/reviews');
+        this.props.history.push('/admin/reviews');
         break;
       default:
         this.props.history.push(this.props.location.pathname);
