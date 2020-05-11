@@ -35,7 +35,7 @@ class MainNav extends React.Component {
             <Link href="/">
               <img src={logo} alt="Giraffe logo" />
             </Link>
-            <Link href="/home">
+            <Link href="/">
               <a className={classes.menuOption}>Home</a>
             </Link>
             <Link href="/">
