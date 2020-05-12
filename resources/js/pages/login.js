@@ -23,7 +23,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        { this.props.session.role ? window.location.href = '/admin/reviews' : <LoginPage /> }
+        { this.props.session.role ? window.location.href = '/admin/#/reviews' : <LoginPage /> }
       </div>
     );
   }
