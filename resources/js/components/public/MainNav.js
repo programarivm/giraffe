@@ -38,7 +38,7 @@ class MainNav extends React.Component {
             <Link href="/">
               <a className={classes.menuOption}>Home</a>
             </Link>
-            <Link href="/">
+            <Link href="/reviews">
               <a className={classes.menuOption}>Reviews</a>
             </Link>
             <ButtonGroup

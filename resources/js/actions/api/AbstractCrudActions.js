@@ -53,7 +53,7 @@ export default class AbstractCrudActions {
 	fetchAll() {
 		return dispatch => {
 			dispatch({ type: this.actionTypes.FETCH_ALL_LOADING });
-			return axios.get(process.env.MIX_APP_URL + this.endpoint)
+			return axios.get(this.endpoint)
 				.then((res) => {
 					switch (res.status) {
 						case 200:
