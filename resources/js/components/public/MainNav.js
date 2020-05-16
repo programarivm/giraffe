@@ -1,62 +1,36 @@
 import { AppBar, Button, ButtonGroup, Toolbar } from '@material-ui/core';
-import { withStyles } from '@material-ui/core/styles';
 import Link from 'next/link';
 import React from 'react';
 import logo from '../../../images/logo.png';
 
-const styles = theme => ({
-  root: {
-    flexGrow: 1,
-  },
-  menuOption: {
-    textDecoration: 'none',
-    marginRight: theme.spacing(5),
-    color: '#fff',
-    '&:hover': {
-       color: '#fff',
-    },
-  },
-  menuOptionActive: {
-    fontWeight: 'bold',
-  },
-  buttonGroup: {
-    backgroundColor: '#fff',
-    marginLeft: 'auto',
-  },
-});
+const MainNav = () => {
+  const styles = {
+    a: {
+      textDecoration: 'none',
+      marginLeft: 10,
+      marginRight: 30,
+      color: '#fff'
+    }
+  };
 
-class MainNav extends React.Component {
-  render() {
-    const { classes } = this.props;
-    return (
-      <div className={classes.root}>
-        <AppBar position="static">
-          <Toolbar>
-            <Link href="/">
-              <img src={logo} alt="Giraffe logo" />
-            </Link>
-            <Link href="/">
-              <a className={classes.menuOption}>Home</a>
-            </Link>
-            <Link href="/reviews">
-              <a className={classes.menuOption}>Reviews</a>
-            </Link>
-            <ButtonGroup
-              size="small"
-              aria-label="small outlined button group"
-              className={classes.buttonGroup}
-            >
-              <Button>
-                <Link href="/login">
-                  <a style={{ textDecoration: 'none' }}>Sign in</a>
-                </Link>
-              </Button>
-            </ButtonGroup>
-          </Toolbar>
-        </AppBar>
-      </div>
-    );
-  }
+  return (
+    <AppBar position="static">
+      <Toolbar>
+        <Link href="/">
+          <img src={logo} alt="Giraffe logo" />
+        </Link>
+        <Link href="/">
+          <a style={styles.a}>Home</a>
+        </Link>
+        <Link href="/reviews">
+          <a style={styles.a}>Reviews</a>
+        </Link>
+        <Link href="/login" passHref>
+          <Button component="a" size="small" variant="contained">Sign in</Button>
+        </Link>
+      </Toolbar>
+    </AppBar>
+  );
 }
 
-export default withStyles(styles)(MainNav);
+export default MainNav;
