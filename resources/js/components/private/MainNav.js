@@ -26,7 +26,6 @@ const styles = theme => ({
     fontWeight: 'bold',
   },
   buttonGroup: {
-    backgroundColor: '#fff',
     marginLeft: 'auto',
   },
 });
@@ -67,7 +66,7 @@ class MainNav extends React.Component {
                 Restaurants
               </NavLink>
             </Can>
-            <ButtonGroup size="small" aria-label="small outlined button group" className={classes.buttonGroup}>
+            <ButtonGroup className={classes.buttonGroup}>
               <MyAccountMenu />
             </ButtonGroup>
           </Toolbar>

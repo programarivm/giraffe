@@ -7,9 +7,11 @@ const MainNav = () => {
   const styles = {
     a: {
       textDecoration: 'none',
-      marginLeft: 10,
-      marginRight: 30,
+      marginLeft: 40,
       color: '#fff'
+    },
+    button: {
+      marginLeft: 'auto'
     }
   };
 
@@ -26,7 +28,7 @@ const MainNav = () => {
           <a style={styles.a}>Reviews</a>
         </Link>
         <Link href="/login" passHref>
-          <Button component="a" size="small" variant="contained">Sign in</Button>
+          <Button component="a" size="small" variant="contained" style={styles.button}>Sign in</Button>
         </Link>
       </Toolbar>
     </AppBar>

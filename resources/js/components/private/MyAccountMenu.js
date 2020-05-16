@@ -21,6 +21,7 @@ export default function MyAccountMenu() {
     <div>
       <Button
         size="small"
+        variant="contained"
         aria-controls="fade-menu"
         aria-haspopup="true"
         onClick={handleClick}
