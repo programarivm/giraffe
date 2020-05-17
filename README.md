@@ -1,6 +1,6 @@
 # Giraffe
 
-This is a React GUI interacting with a Laravel API, a real-world example SPA with the following features:
+This is a React app with Redux and Next.js interacting with a Laravel API in a LEMP stack, a real-world full-stack example SPA.
 
 - ACL (access control list)
 - JWT authentication
