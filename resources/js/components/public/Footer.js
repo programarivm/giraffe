@@ -8,8 +8,9 @@ import SubjectIcon from '@material-ui/icons/SubjectTwoTone';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import Typography from '@material-ui/core/Typography';
+import Link from 'next/link';
 
-function Footer() {
+export default function Footer() {
   return (
     <Grid container style={{
         marginTop: 90,
@@ -35,19 +36,25 @@ function Footer() {
             <ListItemIcon>
               <SubjectIcon />
             </ListItemIcon>
-            <ListItemText secondary="Terms and Conditions" />
+            <Link href="/terms-and-conditions" passHref>
+              <ListItemText secondary="Terms and Conditions" />
+            </Link>
           </ListItem>
           <ListItem button>
             <ListItemIcon>
               <LockIcon />
             </ListItemIcon>
-            <ListItemText secondary="Privacy Policy" />
+            <Link href="/privacy-policy" passHref>
+              <ListItemText secondary="Privacy Policy" />
+            </Link>
           </ListItem>
           <ListItem button>
             <ListItemIcon>
               <EmojiFoodBeverage />
             </ListItemIcon>
-            <ListItemText secondary="Cookies Policy" />
+            <Link href="/cookies-policy" passHref>
+              <ListItemText secondary="Cookies Policy" />
+            </Link>
           </ListItem>
         </List>
       </Grid>
@@ -82,5 +89,3 @@ function Footer() {
     </Grid>
   );
 }
-
-export { Footer };
